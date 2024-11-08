@@ -90,6 +90,12 @@ importers:
         specifier: 2.1.4
         version: 2.1.4(@types/node@22.9.0)
 
+  packages/healthcheck:
+    dependencies:
+      '@ldb/logger':
+        specifier: workspace:*
+        version: link:../loggers/logger
+
   packages/loggers/ansi-esc: {}
 
   packages/loggers/base:
