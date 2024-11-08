@@ -1,4 +1,4 @@
 {
   "extends": "@ldb/tsconfig/tsconfig.json",
-  "include": ["packages/**/*"]
+  "include": ["packages/**/*", "vitest.config.ts"]
 }

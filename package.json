@@ -8,12 +8,14 @@
   "contributors": [
     "Billy Bùi <billy.bui@lumiplus.vn> (https://git3.nexdev.net/billy.bui)"
   ],
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://git3.nexdev.net/l1/database/db-packages/ldb.git"
   },
   "scripts": {
-    "bootstrap": "pnpm install && pnpm --filter './packages/configs/*' build"
+    "bootstrap": "pnpm install && pnpm --filter './packages/configs/*' build",
+    "build": "pnpm --filter '@ldb/*' build"
   },
   "devDependencies": {
     "@ldb/eslint-config": "workspace:*",

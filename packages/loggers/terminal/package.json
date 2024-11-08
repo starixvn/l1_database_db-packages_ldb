@@ -1,0 +1,36 @@
+{
+  "name": "@ldb/terminal-logger",
+  "version": "1.1.4",
+  "keywords": [
+    "logger",
+    "terminal",
+    "console"
+  ],
+  "license": "ISC",
+  "author": "Billy Bùi <billy.bui@lumiplus.vn> (https://git3.nexdev.net/billy.bui)",
+  "contributors": [
+    "Billy Bùi <billy.bui@lumiplus.vn> (https://git3.nexdev.net/billy.bui)"
+  ],
+  "files": [
+    "lib/**"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://git3.nexdev.net/l1/database/db-packages/ldb.git",
+    "directory": "packages/loggers/terminal"
+  },
+  "scripts": {
+    "lint": "tsc",
+    "prebuild": "pnpm lint",
+    "build": "rimraf lib && tsup src/index.ts --format cjs,esm --dts -d lib",
+    "prepublish": "pnpm build"
+  },
+  "dependencies": {
+    "@ldb/ansi-esc": "workspace:*",
+    "@ldb/base-logger": "workspace:*",
+    "@ldb/utils": "workspace:*"
+  }
+}
