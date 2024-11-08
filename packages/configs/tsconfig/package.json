@@ -1,0 +1,28 @@
+{
+  "name": "@ldb/tsconfig",
+  "description": "Common tsconfig.json",
+  "version": "22.0.0",
+  "keywords": [
+    "tsconfig",
+    "config"
+  ],
+  "license": "ISC",
+  "author": "Billy Bùi <billy.bui@lumiplus.vn> (https://git3.nexdev.net/billy.bui)",
+  "contributors": [
+    "Billy Bùi <billy.bui@lumiplus.vn> (https://git3.nexdev.net/billy.bui)"
+  ],
+  "files": [
+    "tsconfig.json"
+  ],
+  "main": "tsconfig.json",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://git3.nexdev.net/l1/database/db-packages/ldb.git",
+    "directory": "packages/configs/tsconfig"
+  },
+  "scripts": {},
+  "dependencies": {
+    "@tsconfig/node22": "22.0.0"
+  }
+}

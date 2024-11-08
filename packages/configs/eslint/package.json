@@ -1,0 +1,42 @@
+{
+  "name": "@ldb/eslint-config",
+  "description": "Common eslint config",
+  "version": "0.2.2",
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "license": "ISC",
+  "author": "Billy Bùi <billy.bui@lumiplus.vn> (https://git3.nexdev.net/billy.bui)",
+  "contributors": [
+    "Billy Bùi <billy.bui@lumiplus.vn> (https://git3.nexdev.net/billy.bui)"
+  ],
+  "files": [
+    "lib/**"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://git3.nexdev.net/l1/database/db-packages/ldb.git",
+    "directory": "packages/configs/prettier"
+  },
+  "scripts": {
+    "build": "rimraf lib && tsc",
+    "prepublish": "pnpm build"
+  },
+  "dependencies": {
+    "@eslint/js": "9.13.0",
+    "eslint-config-google": "0.14.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "eslint-plugin-security": "3.0.1",
+    "typescript-eslint": "8.12.2"
+  },
+  "devDependencies": {
+    "@types/eslint-plugin-security": "3.0.0",
+    "@types/eslint__js": "8.42.3",
+    "@typescript-eslint/utils": "8.12.2"
+  }
+}

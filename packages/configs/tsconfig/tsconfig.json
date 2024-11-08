@@ -1,0 +1,15 @@
+{
+  "extends": "@tsconfig/node22/tsconfig.json",
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceRoot": "/",
+    "mapRoot": "/",
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "target": "ESNext",
+    "alwaysStrict": true
+  },
+  "compileOnSave": true
+}
