@@ -1,0 +1,35 @@
+{
+  "name": "@ldb/tsup-config",
+  "description": "Common tsup config",
+  "version": "0.1.0",
+  "keywords": [
+    "tsup",
+    "builder",
+    "config"
+  ],
+  "license": "ISC",
+  "author": "Billy Bùi <billy.bui@lumiplus.vn> (https://git3.nexdev.net/billy.bui)",
+  "contributors": [
+    "Billy Bùi <billy.bui@lumiplus.vn> (https://git3.nexdev.net/billy.bui)"
+  ],
+  "files": [
+    "lib/**"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://git3.nexdev.net/l1/database/db-packages/ldb.git",
+    "directory": "packages/configs/tsup"
+  },
+  "scripts": {
+    "lint": "tsc",
+    "prebuild": "pnpm lint",
+    "build": "tsup-node src/index.ts --no-config --clean --format cjs,esm --dts -d lib",
+    "prepublish": "pnpm build"
+  },
+  "dependencies": {
+    "tsup": "8.3.5"
+  }
+}

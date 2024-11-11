@@ -17,6 +17,9 @@ importers:
       '@ldb/tsconfig':
         specifier: workspace:*
         version: link:packages/configs/tsconfig
+      '@ldb/tsup-config':
+        specifier: workspace:*
+        version: link:packages/configs/tsup
       '@ldb/vitest-config':
         specifier: workspace:*
         version: link:packages/configs/vitest
@@ -83,6 +86,12 @@ importers:
       '@tsconfig/node22':
         specifier: 22.0.0
         version: 22.0.0
+
+  packages/configs/tsup:
+    dependencies:
+      tsup:
+        specifier: 8.3.5
+        version: 8.3.5(postcss@8.4.47)(typescript@5.6.3)
 
   packages/configs/vitest:
     dependencies:

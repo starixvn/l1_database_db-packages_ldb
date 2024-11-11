@@ -21,6 +21,7 @@
     "@ldb/eslint-config": "workspace:*",
     "@ldb/prettier-config": "workspace:*",
     "@ldb/tsconfig": "workspace:*",
+    "@ldb/tsup-config": "workspace:*",
     "@ldb/vitest-config": "workspace:*",
     "@types/node": "22.9.0",
     "@vitest/coverage-v8": "2.1.4",

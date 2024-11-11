@@ -2,7 +2,8 @@
   "extends": "@ldb/tsconfig/tsconfig.json",
   "compilerOptions": {
     "rootDir": "src",
-    "outDir": "lib"
+    "outDir": "lib",
+    "noEmit": true
   },
   "include": ["src/**/*"]
 }

@@ -1,7 +1,7 @@
 {
   "name": "@ldb/eslint-config",
   "description": "Common eslint config",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "keywords": [
     "eslint",
     "config"
@@ -23,7 +23,9 @@
     "directory": "packages/configs/prettier"
   },
   "scripts": {
-    "build": "rimraf lib && tsc",
+    "lint": "tsc",
+    "prebuild": "pnpm lint",
+    "build": "tsup-node",
     "prepublish": "pnpm build"
   },
   "dependencies": {
