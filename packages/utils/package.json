@@ -1,6 +1,6 @@
 {
   "name": "@ldb/utils",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "keywords": [
     "utility"
   ],
@@ -21,9 +21,12 @@
     "test:dev": "vitest",
     "test": "vitest run",
     "test-coverage": "vitest run --coverage",
-    "lint": "tsc",
+    "lint": "tsc -p tsconfig.json",
     "prebuild": "pnpm lint & pnpm test",
-    "build": "rimraf lib && tsup src/index.ts --format cjs,esm --dts -d lib",
+    "build": "tsup-node",
     "prepublish": "pnpm build"
+  },
+  "devDependencies": {
+    "@ldb/utils": "workspace:^"
   }
 }
