@@ -1,7 +1,7 @@
 import { defineConfig } from "tsup";
 
 export const defaultConfig = defineConfig({
-    entry: ["src/index.ts", "!src/**/*.test.*"],
+    entry: ["src/index.ts"],
     format: ["cjs", "esm"],
     dts: true,
     outDir: "lib",

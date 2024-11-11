@@ -1,6 +1,6 @@
 {
   "name": "@ldb/mongo",
-  "version": "6.10.2",
+  "version": "6.10.3",
   "keywords": [
     "mongodb",
     "bson"
@@ -24,7 +24,7 @@
   "scripts": {
     "lint": "tsc",
     "prebuild": "pnpm lint",
-    "build": "rimraf lib && tsup src/index.ts --format cjs,esm --dts -d lib",
+    "build": "tsup-node",
     "prepublish": "pnpm build"
   },
   "dependencies": {

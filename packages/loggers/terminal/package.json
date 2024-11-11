@@ -1,6 +1,6 @@
 {
   "name": "@ldb/terminal-logger",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "keywords": [
     "logger",
     "terminal",
@@ -25,7 +25,7 @@
   "scripts": {
     "lint": "tsc",
     "prebuild": "pnpm lint",
-    "build": "rimraf lib && tsup src/index.ts --format cjs,esm --dts -d lib",
+    "build": "tsup-node",
     "prepublish": "pnpm build"
   },
   "dependencies": {

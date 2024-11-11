@@ -1,7 +1,7 @@
 {
   "name": "@ldb/tsup-config",
   "description": "Common tsup config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "tsup",
     "builder",

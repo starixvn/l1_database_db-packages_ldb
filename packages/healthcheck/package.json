@@ -1,6 +1,6 @@
 {
   "name": "@ldb/healthcheck",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "keywords": [
     "healthcheck"
   ],
@@ -26,7 +26,7 @@
     "test-coverage": "vitest run --coverage",
     "lint": "tsc",
     "prebuild": "pnpm lint & pnpm test",
-    "build": "rimraf lib && tsup src/index.ts --format cjs,esm --dts -d lib",
+    "build": "tsup-node",
     "prepublish": "pnpm build"
   },
   "dependencies": {
