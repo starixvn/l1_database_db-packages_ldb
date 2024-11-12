@@ -4,6 +4,15 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    '@sentry/node':
+      specifier: 6.19.7
+      version: 6.19.7
+    '@sentry/types':
+      specifier: 6.19.7
+      version: 6.19.7
+
 importers:
 
   .:
@@ -110,22 +119,22 @@ importers:
   packages/loggers/base:
     dependencies:
       '@sentry/types':
-        specifier: 6.19.7
+        specifier: 'catalog:'
         version: 6.19.7
 
   packages/loggers/logger:
     dependencies:
       '@ldb/base-logger':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../base
       '@ldb/sentry-logger':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../sentry
       '@ldb/skynex-logger':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../skynex
       '@ldb/terminal-logger':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../terminal
 
   packages/loggers/sentry:
@@ -137,10 +146,10 @@ importers:
         specifier: workspace:*
         version: link:../../utils
       '@sentry/node':
-        specifier: 6.19.7
+        specifier: 'catalog:'
         version: 6.19.7
       '@sentry/types':
-        specifier: 6.19.7
+        specifier: 'catalog:'
         version: 6.19.7
 
   packages/loggers/skynex:
@@ -192,10 +201,6 @@ importers:
         version: link:../utils
 
   packages/utils:
-    dependencies:
-      '@ldb/logger':
-        specifier: workspace:*
-        version: link:../loggers/logger
     devDependencies:
       '@ldb/utils':
         specifier: workspace:*

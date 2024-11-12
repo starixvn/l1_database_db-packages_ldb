@@ -27,6 +27,6 @@
     "prepublish": "pnpm build"
   },
   "dependencies": {
-    "@sentry/types": "6.19.7"
+    "@sentry/types": "catalog:"
   }
 }

@@ -30,7 +30,7 @@
   "dependencies": {
     "@ldb/base-logger": "workspace:*",
     "@ldb/utils": "workspace:*",
-    "@sentry/node": "6.19.7",
-    "@sentry/types": "6.19.7"
+    "@sentry/node": "catalog:",
+    "@sentry/types": "catalog:"
   }
 }

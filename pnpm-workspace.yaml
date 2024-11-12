@@ -1,3 +1,7 @@
 packages:
   - "packages/**/*"
   - "!packages/template"
+
+catalog:
+  "@sentry/node": "6.19.7"
+  "@sentry/types": "6.19.7"
