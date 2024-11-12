@@ -24,7 +24,7 @@ export class SkynexLogger extends BaseLogger {
         for (const [, conversationId] of this.conversationIds) {
             try {
                 await post({ conversationId, message });
-            } finally {
+            } catch {
                 //
             }
         }

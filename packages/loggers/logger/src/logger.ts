@@ -23,21 +23,21 @@ export class Logger extends BaseLogger<CompositeOptions> {
         if (this.terminalLogger) {
             try {
                 this.terminalLogger.log(severity, content, additional, terminal);
-            } finally {
+            } catch {
                 //
             }
         }
         if (this.skynexLogger) {
             try {
                 this.skynexLogger.log(severity, content, additional);
-            } finally {
+            } catch {
                 //
             }
         }
         if (this.sentryLogger) {
             try {
                 this.sentryLogger.log(severity, content, additional, sentry);
-            } finally {
+            } catch {
                 //
             }
         }
@@ -45,7 +45,7 @@ export class Logger extends BaseLogger<CompositeOptions> {
             for (const logger of this.otherLoggers) {
                 try {
                     logger.log(severity, content, additional);
-                } finally {
+                } catch {
                     //
                 }
             }

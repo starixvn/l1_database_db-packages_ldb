@@ -185,18 +185,20 @@ importers:
         specifier: 1.0.3
         version: 1.0.3
 
-  packages/scheduler: {}
-
-  packages/tests:
+  packages/scheduler:
     dependencies:
       '@ldb/utils':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../utils
 
   packages/utils:
+    dependencies:
+      '@ldb/logger':
+        specifier: workspace:*
+        version: link:../loggers/logger
     devDependencies:
       '@ldb/utils':
-        specifier: workspace:^
+        specifier: workspace:*
         version: 'link:'
 
 packages:

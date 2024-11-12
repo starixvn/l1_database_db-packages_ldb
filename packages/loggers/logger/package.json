@@ -1,6 +1,6 @@
 {
   "name": "@ldb/logger",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "keywords": [
     "logger"
   ],
@@ -27,9 +27,9 @@
     "prepublish": "pnpm build"
   },
   "dependencies": {
-    "@ldb/base-logger": "workspace:*",
-    "@ldb/sentry-logger": "workspace:*",
-    "@ldb/skynex-logger": "workspace:*",
-    "@ldb/terminal-logger": "workspace:*"
+    "@ldb/base-logger": "workspace:^",
+    "@ldb/sentry-logger": "workspace:^",
+    "@ldb/skynex-logger": "workspace:^",
+    "@ldb/terminal-logger": "workspace:^"
   }
 }
