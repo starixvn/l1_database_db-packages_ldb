@@ -1,8 +1,7 @@
 import { afterAll, describe, expect, it, vi } from "vitest";
 
 import { TerminalLogger } from "@ldb/logger";
-import { healthcheck } from "./healthcheck.js";
-import { HealthcheckServer } from "./server.js";
+import { healthcheck, HealthcheckServer } from "./index.js";
 
 const logger = new TerminalLogger();
 
