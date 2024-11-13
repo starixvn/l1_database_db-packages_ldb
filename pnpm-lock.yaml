@@ -201,6 +201,10 @@ importers:
         version: link:../utils
 
   packages/utils:
+    dependencies:
+      '@ldb/base-logger':
+        specifier: workspace:*
+        version: link:../loggers/base
     devDependencies:
       '@ldb/utils':
         specifier: workspace:*

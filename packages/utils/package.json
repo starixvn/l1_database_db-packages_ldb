@@ -1,6 +1,6 @@
 {
   "name": "@ldb/utils",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "keywords": [
     "utility"
   ],
@@ -26,7 +26,10 @@
     "build": "tsup-node",
     "prepublish": "pnpm build"
   },
+  "dependencies": {
+    "@ldb/base-logger": "workspace:*"
+  },
   "devDependencies": {
-    "@ldb/utils": "workspace:^"
+    "@ldb/utils": "workspace:*"
   }
 }

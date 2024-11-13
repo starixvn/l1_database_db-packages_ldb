@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import type { Satisfies } from "@ldb/utils";
 
-/** Test Satisfies<T, U> */
 {
     type U = { a: number; b: string };
     type T1 = { a: number; b: string };

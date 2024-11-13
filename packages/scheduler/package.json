@@ -1,0 +1,32 @@
+{
+  "name": "@ldb/scheduler",
+  "version": "0.4.0",
+  "keywords": [
+    "scheduler"
+  ],
+  "license": "ISC",
+  "author": "Billy Bùi <billy.bui@lumiplus.vn> (https://git3.nexdev.net/billy.bui)",
+  "files": [
+    "lib/**"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://git3.nexdev.net/l1/database/db-packages/ldb.git",
+    "directory": "packages/scheduler"
+  },
+  "scripts": {
+    "test:dev": "vitest",
+    "test": "vitest run",
+    "test-coverage": "vitest run --coverage",
+    "lint": "tsc -p tsconfig.json",
+    "prebuild": "pnpm lint & pnpm test",
+    "build": "tsup-node",
+    "prepublish": "pnpm build"
+  },
+  "dependencies": {
+    "@ldb/utils": "workspace:*"
+  }
+}
