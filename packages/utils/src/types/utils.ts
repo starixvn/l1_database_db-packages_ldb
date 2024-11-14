@@ -8,3 +8,5 @@ export type IntelliString<T> = T | (string & NonNullable<unknown>);
 export type Satisfies<T extends U, U> = T;
 
 export type KeyOf<T> = T extends Record<infer K, unknown> ? K : never;
+
+export type Intersection<U> = (U extends unknown ? (u: U) => void : never) extends (u: infer I) => void ? I : never;
