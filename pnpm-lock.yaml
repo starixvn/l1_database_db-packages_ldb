@@ -210,6 +210,19 @@ importers:
         specifier: workspace:*
         version: 'link:'
 
+  packages/watcher:
+    dependencies:
+      '@ldb/mongo':
+        specifier: workspace:*
+        version: link:../mongo
+      '@ldb/utils':
+        specifier: workspace:*
+        version: link:../utils
+    devDependencies:
+      '@ldb/base-logger':
+        specifier: workspace:*
+        version: link:../loggers/base
+
 packages:
 
   '@ampproject/remapping@2.3.0':
