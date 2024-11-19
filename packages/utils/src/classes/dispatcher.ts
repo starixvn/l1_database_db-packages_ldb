@@ -8,7 +8,7 @@ export class Dispatcher<
     Publisher extends TypedEventEmitter<PubEventDesc> = TypedEventEmitter<PubEventDesc>,
     PubEvent extends StringKeyOf<PubEventDesc> = StringKeyOf<PubEventDesc>,
 > extends TypedEventEmitter<Events> {
-    private readonly publishers: Set<Publisher> = new Set();
+    private readonly publishers: Map<PubEvent, Set<Publisher>> = new Map();
 
     constructor(protected readonly logger: BaseLogger) {
         super();
@@ -23,22 +23,34 @@ export class Dispatcher<
     }
 
     subscribe<Event extends PubEvent>(publisher: Publisher, event: Event, listener: PubEventDesc[Event]): boolean {
-        if (this.publishers.has(publisher)) {
+        const eventPubs = this.publishers.get(event) || new Set();
+
+        if (!this.publishers.has(event)) {
+            this.publishers.set(event, eventPubs);
+        }
+
+        if (eventPubs.has(publisher)) {
             return false;
         }
 
-        this.publishers.add(publisher);
+        eventPubs.add(publisher);
         publisher.addListener<Event>(event, listener);
         return true;
     }
 
     unsubscribe<Event extends PubEvent>(publisher: Publisher, event: Event, listener: PubEventDesc[Event]): boolean {
-        if (!this.publishers.has(publisher)) {
+        const eventPubs = this.publishers.get(event);
+
+        if (!eventPubs) {
+            return false;
+        }
+
+        if (!eventPubs.has(publisher)) {
             return false;
         }
 
         publisher.removeListener<Event>(event, listener);
-        this.publishers.delete(publisher);
+        eventPubs.delete(publisher);
         return true;
     }
 }
