@@ -29,6 +29,8 @@ export class HealthcheckServer {
             this.server.listen(unixSocketPath);
         }
 
+        process.on("exit", () => this.server.close());
+
         process.on("SIGINT", () => {
             this.server.close();
             process.exit(0);
