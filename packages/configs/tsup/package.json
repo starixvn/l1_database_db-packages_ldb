@@ -1,7 +1,7 @@
 {
   "name": "@ldb/tsup-config",
   "description": "Common tsup config",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "keywords": [
     "tsup",
     "builder",
@@ -31,5 +31,8 @@
   },
   "dependencies": {
     "tsup": "8.3.5"
+  },
+  "peerDependencies": {
+    "tsup": "8.3.x"
   }
 }
