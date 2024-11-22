@@ -33,7 +33,7 @@ Add `tsconfig.json` to the root of your project
 This configuration will do the following:
 
 -   Output built files to `lib` folder
--   Create mapping for built files
+-   Create source mapping for built files
 -   Not exclude test files for type checking
 
 ### For production
@@ -48,7 +48,8 @@ Add `tsconfig.prod.json` to the root of your project
         "rootDir": "src",
         "outDir": "lib"
     },
-    "include": ["src/**/*", "!**/*.test.*"]
+    "include": ["src/**/*"],
+    "exclude": ["**/*.test.*"]
 }
 ```
 

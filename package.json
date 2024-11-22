@@ -14,7 +14,7 @@
     "url": "https://git3.nexdev.net/l1/database/db-packages/ldb.git"
   },
   "scripts": {
-    "bootstrap": "pnpm install && pnpm --filter './packages/configs/*' build",
+    "bootstrap": "pnpm install --force && pnpm --filter './packages/configs/*' build",
     "build": "pnpm --filter '@ldb/*' build"
   },
   "devDependencies": {
