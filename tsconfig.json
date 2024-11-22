@@ -1,4 +1,6 @@
 {
   "extends": "@ldb/tsconfig/tsconfig.json",
-  "include": ["packages/**/*", "*.ts"]
+  "compilerOptions": { "noEmit": true },
+  "include": ["packages/**/*"],
+  "exclude": ["**/lib/**/*"]
 }
