@@ -1,15 +1,17 @@
 {
+  "$schema": "http://json.schemastore.org/tsconfig",
   "extends": "@tsconfig/node22/tsconfig.json",
   "compilerOptions": {
-    "sourceMap": true,
+    "sourceMap": false,
     "declaration": true,
-    "declarationMap": true,
-    "sourceRoot": "/",
-    "mapRoot": "/",
+    "declarationMap": false,
     "moduleResolution": "NodeNext",
     "module": "NodeNext",
     "target": "ESNext",
-    "alwaysStrict": true
+    "alwaysStrict": true,
+    "allowJs": true,
+    "checkJs": true,
+    "pretty": true
   },
   "compileOnSave": true
 }

@@ -1,7 +1,7 @@
 {
   "name": "@ldb/tsconfig",
   "description": "Common tsconfig.json",
-  "version": "22.0.0",
+  "version": "22.0.1",
   "keywords": [
     "tsconfig",
     "config"
@@ -12,7 +12,7 @@
     "Billy Bùi <billy.bui@lumiplus.vn> (https://git3.nexdev.net/billy.bui)"
   ],
   "files": [
-    "tsconfig.json"
+    "tsconfig*.json"
   ],
   "main": "tsconfig.json",
   "type": "module",
