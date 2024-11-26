@@ -1,6 +1,5 @@
 import type { BaseLogger } from "@ldb/base-logger";
-import { wait } from "@ldb/utils";
-import type { Metadata } from "./types.js";
+import { wait, type Metadata } from "@ldb/utils";
 
 let exiting = false;
 

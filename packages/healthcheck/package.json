@@ -1,6 +1,6 @@
 {
   "name": "@ldb/healthcheck",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "keywords": [
     "healthcheck"
   ],
@@ -29,8 +29,8 @@
     "build": "tsup-node",
     "prepublish": "pnpm build"
   },
-  "dependencies": {
-    "@ldb/logger": "workspace:*"
-  },
-  "devDependencies": {}
+  "devDependencies": {
+    "@ldb/logger": "workspace:*",
+    "@ldb/utils": "workspace:*"
+  }
 }

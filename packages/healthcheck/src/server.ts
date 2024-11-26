@@ -1,6 +1,6 @@
 import type { BaseLogger } from "@ldb/logger";
+import type { Metadata } from "@ldb/utils";
 import http, { type IncomingMessage, type Server, type ServerResponse } from "http";
-import type { Metadata } from "./types.js";
 import { getUnixSocketPath } from "./utils.js";
 
 export class HealthcheckServer {

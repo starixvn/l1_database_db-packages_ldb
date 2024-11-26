@@ -60,8 +60,8 @@ importers:
   packages/base-app:
     dependencies:
       '@ldb/utils':
-        specifier: ^0.3.4
-        version: 0.3.4
+        specifier: workspace:*
+        version: link:../utils
     devDependencies:
       '@ldb/base-logger':
         specifier: workspace:*
@@ -129,10 +129,13 @@ importers:
         version: 2.1.5(@types/node@22.10.0)
 
   packages/healthcheck:
-    dependencies:
+    devDependencies:
       '@ldb/logger':
         specifier: workspace:*
         version: link:../loggers/logger
+      '@ldb/utils':
+        specifier: workspace:*
+        version: link:../utils
 
   packages/loggers/ansi-esc: {}
 
@@ -755,12 +758,6 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
-
-  '@ldb/base-logger@1.1.4':
-    resolution: {integrity: sha512-auDqoBQcm+80788fN7sig1FaEusYoXlMPgtvbUVdqsTTmpCS67L0mlZPiY6ytGzeM4VqxVazU9Im8ug2KftAfA==}
-
-  '@ldb/utils@0.3.4':
-    resolution: {integrity: sha512-iCWttrbA6AfY9sMvUHNfIgeGjUQeCPACv7DDuRh9eF0qkvQ8jzBCN9t+rQH8hqq8/t2DIi8GcKAY1ykt3NdgPA==}
 
   '@mongodb-js/saslprep@1.1.9':
     resolution: {integrity: sha512-tVkljjeEaAhCqTzajSdgbQ6gE6f3oneVwa3iXR6csiEwXXOFsiC6Uh9iAjAhXPtqa/XMDHWjjeNH/77m/Yq2dw==}
@@ -3057,14 +3054,6 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
-
-  '@ldb/base-logger@1.1.4':
-    dependencies:
-      '@sentry/types': 6.19.7
-
-  '@ldb/utils@0.3.4':
-    dependencies:
-      '@ldb/base-logger': 1.1.4
 
   '@mongodb-js/saslprep@1.1.9':
     dependencies:

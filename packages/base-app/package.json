@@ -1,6 +1,6 @@
 {
   "name": "@ldb/base-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "app"
   ],
@@ -27,7 +27,7 @@
     "prepublish": "pnpm build"
   },
   "dependencies": {
-    "@ldb/utils": "^0.3.4"
+    "@ldb/utils": "workspace:*"
   },
   "devDependencies": {
     "@ldb/base-logger": "workspace:*"

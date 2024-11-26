@@ -1,5 +1,5 @@
+import type { Metadata } from "@ldb/utils";
 import { request } from "./request.js";
-import type { Metadata } from "./types.js";
 
 export const healthcheck = async (metadata: Metadata, healthcheckPort: number) => {
     const { NODE_ENV } = process.env;
