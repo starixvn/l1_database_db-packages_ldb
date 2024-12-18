@@ -30,9 +30,9 @@
     "prepublish": "pnpm build"
   },
   "dependencies": {
-    "tsup": "8.3.5"
+    "tsup": "catalog:"
   },
   "peerDependencies": {
-    "tsup": "8.3.x"
+    "tsup": "catalog:"
   }
 }

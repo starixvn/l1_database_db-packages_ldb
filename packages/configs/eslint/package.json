@@ -1,7 +1,7 @@
 {
   "name": "@ldb/eslint-config",
   "description": "Common eslint config",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "keywords": [
     "eslint",
     "config"
@@ -29,19 +29,19 @@
     "prepublish": "pnpm build"
   },
   "dependencies": {
-    "@eslint/js": "9.15.0",
+    "@eslint/js": "catalog:",
     "eslint-config-google": "0.14.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.2.1",
     "eslint-plugin-security": "3.0.1",
-    "typescript-eslint": "8.15.0"
+    "typescript-eslint": "catalog:"
   },
   "devDependencies": {
     "@types/eslint-plugin-security": "3.0.0",
     "@types/eslint__js": "8.42.3",
-    "@typescript-eslint/utils": "8.15.0"
+    "@typescript-eslint/utils": "catalog:"
   },
   "peerDependencies": {
-    "eslint": "9.15.x"
+    "eslint": "catalog:"
   }
 }
