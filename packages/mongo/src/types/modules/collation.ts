@@ -151,15 +151,3 @@ export type Locale =
     | "zu";
 
 export type Strength = 1 | 2 | 3 | 4 | 5;
-
-export interface CollationOptions {
-    locale: Locale;
-    caseLevel?: boolean;
-    caseFirst?: string;
-    strength?: Strength;
-    numericOrdering?: boolean;
-    alternate?: string;
-    maxVariable?: string;
-    backwards?: boolean;
-    normalization?: boolean;
-}
