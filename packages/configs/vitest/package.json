@@ -1,7 +1,7 @@
 {
   "name": "@ldb/vitest-config",
   "description": "Common vitest config",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "keywords": [
     "vitest",
     "test",
@@ -30,10 +30,10 @@
     "prepublish": "pnpm build"
   },
   "dependencies": {
-    "vitest": "2.1.5"
+    "vitest": "catalog:"
   },
   "peerDependencies": {
-    "vitest": "2.1.x",
-    "@vitest/coverage-v8": "2.1.x"
+    "vitest": "catalog:",
+    "@vitest/coverage-v8": "catalog:"
   }
 }

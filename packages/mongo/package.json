@@ -28,6 +28,7 @@
     "prepublish": "pnpm build"
   },
   "dependencies": {
+    "@ldb/utils": "workspace:*",
     "@mongodb-js/zstd": "1.2.2",
     "bson": "6.9.0",
     "mongodb": "6.10.0",
