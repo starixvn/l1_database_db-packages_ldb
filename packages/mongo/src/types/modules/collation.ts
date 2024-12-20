@@ -1,3 +1,6 @@
+import type { Satisfies } from "@ldb/utils";
+import { CollationOptions } from "mongodb";
+
 export type Locale =
     | "simple"
     | "af"
@@ -151,3 +154,18 @@ export type Locale =
     | "zu";
 
 export type Strength = 1 | 2 | 3 | 4 | 5;
+
+export type Collation = Satisfies<
+    {
+        locale: Locale;
+        caseLevel?: boolean;
+        caseFirst?: string;
+        strength?: Strength;
+        numericOrdering?: boolean;
+        alternate?: string;
+        maxVariable?: string;
+        backwards?: boolean;
+        normalization?: boolean;
+    },
+    CollationOptions
+>;
