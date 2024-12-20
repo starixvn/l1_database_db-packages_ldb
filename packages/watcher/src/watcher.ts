@@ -1,15 +1,15 @@
 import type { BaseLogger } from "@ldb/base-logger";
-import {
-    type ChangeStream,
-    type ChangeStreamDeleteDocument,
-    type ChangeStreamDocument,
-    type ChangeStreamInsertDocument,
-    type ChangeStreamOptions,
-    type ChangeStreamReplaceDocument,
-    type ChangeStreamUpdateDocument,
-    type Collection,
-    type Document,
-    type EventsDescription,
+import type {
+    ChangeStream,
+    ChangeStreamDeleteDocument,
+    ChangeStreamDocument,
+    ChangeStreamInsertDocument,
+    ChangeStreamOptions,
+    ChangeStreamReplaceDocument,
+    ChangeStreamUpdateDocument,
+    Collection,
+    Document,
+    EventsDescription,
 } from "@ldb/mongo";
 import { TypedEventEmitter } from "@ldb/utils";
 
