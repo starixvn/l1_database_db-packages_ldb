@@ -5,8 +5,8 @@ let exiting = false;
 
 export class BaseApp {
     constructor(
-        private readonly metadata: Metadata,
-        private readonly logger: BaseLogger,
+        protected readonly metadata: Metadata,
+        protected readonly logger: BaseLogger,
     ) {
         this.selfBound();
         this.handleExceptions();
