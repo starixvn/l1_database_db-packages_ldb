@@ -5,8 +5,8 @@ packages:
 catalog:
   "@sentry/node": "6.19.7"
   "@sentry/types": "6.19.7"
-  "vitest": "2.1.8"
-  "@vitest/coverage-v8": "2.1.8"
+  "vitest": "^3.0.0"
+  "@vitest/coverage-v8": "^3.0.0"
   "tsup": "8.3.5"
   "eslint": "9.22.0"
   "@eslint/js": "9.22.0"
