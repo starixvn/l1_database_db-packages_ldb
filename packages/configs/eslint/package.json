@@ -1,7 +1,7 @@
 {
   "name": "@ldb/eslint-config",
   "description": "Common eslint config",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "keywords": [
     "eslint",
     "config"
@@ -31,6 +31,7 @@
   "dependencies": {
     "@eslint/js": "catalog:",
     "@typescript-eslint/eslint-plugin": "catalog:",
+    "@typescript-eslint/parser": "catalog:",
     "eslint-config-google": "0.14.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.2.1",
