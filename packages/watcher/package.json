@@ -1,6 +1,6 @@
 {
   "name": "@ldb/watcher",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "keywords": [
     "mongodb",
     "change stream",
@@ -29,10 +29,10 @@
     "prepublish": "pnpm build"
   },
   "dependencies": {
-    "@ldb/mongo": "workspace:*",
-    "@ldb/utils": "workspace:*"
+    "@ldb/mongo": "workspace:~",
+    "@ldb/utils": "workspace:~"
   },
   "devDependencies": {
-    "@ldb/base-logger": "workspace:*"
+    "@ldb/base-logger": "workspace:~"
   }
 }
